@@ -286,7 +286,7 @@ h2 {
 }
 
 .student-card {
-  width: min(100%, 760px);
+  width: min(100%, 700px);
   background: var(--card-bg);
   border-radius: 28px;
   padding: 1.4rem 1.5rem 1.6rem;
@@ -308,9 +308,9 @@ h2 {
   display: grid;
   grid-template-columns: 110px minmax(0, 1fr);
   align-items: center;
-  gap: 1.4rem;
+  gap: 0.4rem;
   padding: 0.2rem 0 1rem;
-  border-bottom: 2px solid rgba(68, 78, 88, 0.5);
+  border-bottom: 2px solid rgba(185, 0, 15, 0.5);
 }
 
 .hust-logo {
@@ -323,7 +323,11 @@ h2 {
 .school-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-self: stretch;
+  justify-content: space-between;
+  min-width: 0;
+  row-gap: 0.2rem;
+  padding: 0.15rem 0;
   color: rgba(16, 21, 28, 0.9);
   font-weight: 800;
   letter-spacing: 0.02em;
@@ -331,13 +335,13 @@ h2 {
 }
 
 .school-vn {
-  font-size: clamp(1.4rem, 2vw, 2.2rem);
-  line-height: 1.1;
+  font-size: clamp(1.15rem, 1.85vw, 1.7rem);
+  line-height: 1;
 }
 
 .school-en {
-  font-size: clamp(1rem, 1.3vw, 1.4rem);
-  line-height: 1.2;
+  font-size: clamp(0.82rem, 1.2vw, 1.1rem);
+  line-height: 1;
 }
 
 .card-title {
@@ -347,9 +351,10 @@ h2 {
 }
 
 .card-title h3 {
-  font-size: clamp(2.2rem, 4vw, 4.1rem);
-  font-family: "Merriweather", serif;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.2rem, 4vw, 2.8rem);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: rgba(17, 24, 39, 0.94);
   margin-bottom: 0.15rem;
 }
@@ -357,14 +362,14 @@ h2 {
 .card-title span {
   display: inline-block;
   font-size: clamp(1.2rem, 2vw, 2rem);
-  color: rgba(29, 78, 216, 0.9);
-  font-style: italic;
+  color: rgba(17, 24, 39, 0.9);
+  font-style: clamp(1rem, 1.5vw, 1.6rem);
   font-weight: 600;
 }
 
 .card-photo {
-  width: min(100%, 420px);
-  margin: 0 auto 1.3rem;
+  width: min(100%, 340px);
+  margin: 0 auto 2.0rem;
   padding: 0.15rem;
   background: var(--photo-frame);
   border-radius: 16px;
@@ -374,7 +379,7 @@ h2 {
 
 .card-photo img {
   width: 100%;
-  aspect-ratio: 1.1;
+  aspect-ratio: 551 / 620;
   object-fit: cover;
   border-radius: 12px;
   background: #dfeaf8;
@@ -385,37 +390,61 @@ h2 {
 }
 
 .student-name-block h4 {
-  margin-bottom: 0.25rem;
-  font-size: clamp(2.2rem, 4vw, 4rem);
-  font-family: "Merriweather", serif;
-  letter-spacing: 0.01em;
+  margin-bottom: 1.0rem;
+  font-size: clamp(1.35rem, 3.2vw, 2.3rem);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0;
   color: rgba(17, 24, 39, 0.94);
+  white-space: nowrap;
 }
 
 .student-major {
   margin: 0;
   font-size: clamp(1rem, 1.5vw, 1.6rem);
   font-weight: 600;
-  color: rgba(17, 24, 39, 0.72);
+  color: rgba(17, 24, 39, 0.9);
+}
+
+.card-details {
+  margin-top: 4.0rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(96px, 80%, 148px);
+  align-items: end;
+  gap: 1rem;
 }
 
 .card-info {
-  margin-top: 1.5rem;
   display: grid;
-  gap: 0.8rem;
+  grid-template-columns: max-content 1ch minmax(0, 1fr);
+  column-gap: 0.2rem;
+  row-gap: 0.8rem;
+}
+
+.card-qr {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fff;
 }
 
 .info-row {
-  display: grid;
-  grid-template-columns: minmax(120px, 1fr) minmax(150px, 1.5fr);
-  gap: 0.75rem;
-  align-items: center;
+  display: contents;
+}
+
+.info-row > * {
+  align-self: center;
   font-size: clamp(1.15rem, 1.8vw, 1.6rem);
   color: rgba(17, 24, 39, 0.9);
 }
 
 .info-row span {
   font-weight: 600;
+}
+
+.info-row .info-separator {
+  text-align: center;
 }
 
 .info-row strong {
@@ -647,28 +676,53 @@ h2 {
 
   .card-top {
     grid-template-columns: 85px 1fr;
-    gap: 1rem;
+    gap: 0.35rem;
   }
 
   .school-vn {
-    font-size: 1rem;
+    font-size: clamp(0.84rem, 3.5vw, 1rem);
   }
 
   .school-en {
-    font-size: 0.8rem;
+    font-size: clamp(0.62rem, 2.7vw, 0.8rem);
+  }
+
+  .school-block {
+    row-gap: 0.15rem;
   }
 
   .card-title h3 {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
   .student-name-block h4 {
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 5vw, 1.5rem);
   }
 
   .info-row {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
+    display: contents;
+  }
+
+  .info-row > * {
+    font-size: clamp(0.9rem, 2.5vw, 1.15rem);
+  }
+
+  .info-row > span:first-child,
+  .info-row strong {
+    white-space: nowrap;
+  }
+
+  .info-row > span:first-child {
+    font-size: clamp(0.78rem, 2.2vw, 1rem);
+  }
+
+  .info-row .info-separator {
+    text-align: center;
+  }
+
+  .card-details {
+    grid-template-columns: minmax(0, 1fr) clamp(82px, 24vw, 108px);
+    gap: 0.4rem;
   }
 
   .footer-wrap {

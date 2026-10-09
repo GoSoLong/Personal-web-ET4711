@@ -1,10 +1,10 @@
 const profile = {
-  name: '[HỌ VÀ TÊN]',
-  dateOfBirth: '[NGÀY SINH]',
-  studentId: '[MSSV]',
+  name: 'NGUYỄN TIẾN TRƯỜNG',
+  dateOfBirth: '03/09/2003',
+  studentId: '20241906E',
   major: '[NGÀNH]',
   school: '[TRƯỜNG]',
-  cohort: '[KHÓA]',
+  cohort: '2025.1',
   email: '[EMAIL]',
   github: '[GITHUB]',
   linkedin: '[LINKEDIN]'
