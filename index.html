@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Website cá nhân MVP cho sinh viên học ET4711 - Lập trình Web và Ứng dụng di động."
+    />
+    <title>Portfolio cá nhân | ET4711</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Trang chủ">
+          <span class="brand-mark">Portfolio ET4711</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Điều hướng chính">
+          <a href="#home">Trang chủ</a>
+          <a href="#about">Giới thiệu</a>
+          <a href="#course">ET4711</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Sinh viên đang học</p>
+            <h1>
+              Học tập, thử nghiệm<br />
+              và xây dựng với<br />
+              <span class="course-name">ET4711</span>
+            </h1>
+            <p class="subtitle">Lập trình Web và Ứng dụng di động</p>
+            <p class="lead">
+              Portfolio ghi lại hành trình học tập, các dự án và kỹ năng đang
+              phát triển trong lĩnh vực web và ứng dụng di động.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#about">Giới thiệu về tôi</a>
+              <a class="btn btn-secondary" href="#contact">Liên hệ</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container section-head">
+          <p class="eyebrow">Giới thiệu</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="container about-grid">
+          <article class="student-card-wrap">
+            <div class="student-card" aria-label="Thẻ sinh viên">
+              <div class="card-top">
+                <img class="hust-logo" src="assets/images/LOGO_HUST.png" alt="Logo Đại học Bách khoa Hà Nội" />
+                <div class="school-block">
+                  <span class="school-vn">ĐẠI HỌC</span>
+                  <span class="school-vn">BÁCH KHOA HÀ NỘI</span>
+                  <span class="school-en">HANOI UNIVERSITY</span>
+                  <span class="school-en">OF SCIENCE AND TECHNOLOGY</span>
+                </div>
+              </div>
+
+              <div class="card-title">
+                <h3>THẺ HỌC VIÊN</h3>
+                <span>Student ID Card</span>
+              </div>
+
+              <div class="card-photo">
+                <img src="assets/images/Anh_the.jpg" alt="Ảnh sinh viên" />
+              </div>
+
+              <div class="student-name-block">
+                <h4 data-profile="name">NGUYỄN TIẾN TRƯỜNG</h4>
+                <p class="student-major">TRƯỜNG ĐIỆN - ĐIỆN TỬ</p>
+              </div>
+
+              <div class="card-info">
+                <div class="info-row">
+                  <span>Ngày sinh/ DOB</span>
+                  <strong data-profile="dateOfBirth">[NGÀY SINH]</strong>
+                </div>
+                <div class="info-row">
+                  <span>MSHV/ Student ID</span>
+                  <strong data-profile="studentId">20241906E</strong>
+                </div>
+                <div class="info-row">
+                  <span>Khóa/ Instake</span>
+                  <strong data-profile="cohort">[KHÓA]</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="about-summary">
+            <div class="summary-card">
+              <p class="eyebrow accent">Định hướng</p>
+              <h3>Mục tiêu học tập</h3>
+              <ul class="list-check">
+                <li>Nắm vững nền tảng HTML, CSS và JavaScript qua thực hành.</li>
+                <li>Tìm hiểu quy trình xây dựng website động với NodeJS.</li>
+                <li>Khám phá phát triển ứng dụng di động đa nền tảng với React Native.</li>
+                <li>Rèn luyện tư duy thiết kế giao diện responsive, dễ sử dụng.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="course" class="section course-section">
+        <div class="container section-head">
+          <p class="eyebrow">Môn học</p>
+          <h2>ET4711 - Lập trình Web và Ứng dụng di động</h2>
+        </div>
+
+        <div class="container course-grid">
+          <div class="course-card">
+            <h3>Mục tiêu môn học</h3>
+            <p>
+              Học phần giúp sinh viên nắm được cách thiết kế nội dung bằng HTML5,
+              trình bày bằng CSS3, lập trình tương tác bằng JavaScript, sử dụng
+              NodeJS để xây dựng website và React Native để phát triển ứng dụng
+              di động đa nền tảng.
+            </p>
+          </div>
+
+          <div class="course-card">
+            <h3>Nội dung chính</h3>
+            <ul>
+              <li>HTML5 và CSS3</li>
+              <li>JavaScript cho trang web</li>
+              <li>Responsive design và SEO</li>
+              <li>NodeJS, form, session/cookie</li>
+              <li>React Native cho Android/iOS</li>
+            </ul>
+          </div>
+
+          <div class="course-card">
+            <h3>Kỹ năng đạt được</h3>
+            <ul>
+              <li>Thiết kế và trình bày nội dung web</li>
+              <li>Phát triển giao diện web tương tác</li>
+              <li>Xây dựng website động, SPA</li>
+              <li>Làm việc nhóm và trình bày ý tưởng</li>
+            </ul>
+          </div>
+
+          <div class="course-card">
+            <h3>Đánh giá</h3>
+            <p>Điểm quá trình: 40%</p>
+            <p>Điểm cuối kỳ: 60%</p>
+            <p>Phương pháp: bài tập, thảo luận, viết/đề án nhóm.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio-section">
+        <div class="container section-head">
+          <p class="eyebrow">Dự án học tập</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="container project-grid">
+          <article class="project-card">
+            <span class="tag">Front-end</span>
+            <h3>[Tên dự án 1]</h3>
+            <p>Thiết kế landing page, responsive UI và trải nghiệm người dùng đơn giản.</p>
+          </article>
+          <article class="project-card">
+            <span class="tag">Web App</span>
+            <h3>[Tên dự án 2]</h3>
+            <p>Phát triển giao diện và logic tương tác với JavaScript, form và dữ liệu.</p>
+          </article>
+          <article class="project-card">
+            <span class="tag">Mobile</span>
+            <h3>[Tên dự án 3]</h3>
+            <p>Thiết kế và mockup ứng dụng di động đa nền tảng theo hướng học tập.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container section-head">
+          <p class="eyebrow">Liên hệ</p>
+          <h2>Contact</h2>
+        </div>
+
+        <div class="container contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <span>Email</span>
+              <a data-profile="email" href="mailto:[EMAIL]">[EMAIL]</a>
+            </div>
+            <div class="contact-item">
+              <span>GitHub</span>
+              <a href="https://github.com/[GITHUB]" target="_blank" rel="noreferrer">github.com/[GITHUB]</a>
+            </div>
+            <div class="contact-item">
+              <span>LinkedIn / Facebook</span>
+              <a href="https://www.linkedin.com/in/[LINKEDIN]" target="_blank" rel="noreferrer">linkedin.com/in/[LINKEDIN]</a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <label>
+              Họ tên
+              <input type="text" name="name" placeholder="[HỌ VÀ TÊN]" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="[EMAIL]" required />
+            </label>
+            <label>
+              Tin nhắn
+              <textarea name="message" rows="5" placeholder="Xin chào, tôi muốn trao đổi về dự án..." required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Portfolio ET4711</p>
+        <p>Portfolio MVP · Placeholder content cần chỉnh sửa theo thông tin thực tế.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
